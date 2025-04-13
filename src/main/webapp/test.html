@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>HTML Form</h1>
+	<form action="test" method="post">
+		<div>
+			<label for="name">Name</label> <input type="text" id="name"
+				name="name" required>
+		</div>
+		<br>
+		<div class="form-group">
+			<label for="dob">DOB</label> <input type="text" id="dob" name="dob"
+				placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}"
+				title="Please enter date in dd/mm/yyyy format" required>
+		</div>
+		<br>
+		<div>
+			<label>Gender</label> <input type="radio" id="male" name="gender"
+				value="male" required> <label for="male"
+				style="width: auto;">Male</label> <input type="radio" id="female"
+				name="gender" value="female"> <label for="female"
+				style="width: auto;">Female</label>
+		</div>
+		<br>
+		<div>
+			<label for="course">Course</label> <select id="course" name="course"
+				required multiple="multiple">
+				<option value="Java">Java</option>
+				<option value="Android">Android</option>
+				<option value="PHP">PHP</option>
+				<option value="ASP">ASP</option>
+
+			</select>
+		</div>
+		<br>
+
+		<div>
+			<button type="submit">Register</button>
+		</div>
+
+	</form>
+</body>
+</html>
